@@ -1,0 +1,23 @@
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1026px;
+    padding: 1.5rem;
+    margin: 0 auto;        
+    gap: 35px; 
+    margin-bottom: 15px; 
+
+    &.center {
+        align-items: center;
+    }
+
+    @media (min-width: 650px) {
+        flex-direction: row;                
+    
+        &.center {
+            align-items: start;
+        }
+    }   
+} 
