@@ -16,7 +16,7 @@ export const HomePage = () => {
     const removeRecord = (removeId) => {
         const newRecordList = recordList.filter((record) => record.id !== removeId);
         setRecordList(newRecordList); 
-        toast.success("Registro apagado com sucesso!")       
+        toast.success("Registro deletado com sucesso!");       
     };
     
     return (

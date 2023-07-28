@@ -12,12 +12,12 @@ export const RecordForm = ({addRecord}) => {
     const submit = (event) => {
         event.preventDefault()
         if (!title || !value) {            
-            toast.error("Por favor preencha todos os campos e tente novamente.")
+            toast.error("Por favor preencha todos os campos e tente novamente.");
             return;
         };
 
         addRecord({ title, value, category });
-        toast.success("Registro criado com sucesso!")        
+        toast.success("Registro criado com sucesso!");        
         setTitle("");
         setValue("");
         setCategory("Entrada");        
